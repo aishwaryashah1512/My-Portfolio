@@ -1,0 +1,199 @@
+/*********************************************TAGS******************************************************************8*/
+
+body {
+    font-family: 'PT Serif', serif;
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+
+p {
+    font-family: 'PT Serif', serif;
+    color: #fff;
+}
+
+
+
+.icon {
+    color: #3346FF;
+    margin-bottom: 1rem;
+    margin-top: 2rem
+}
+.icon:hover {
+    color:white;
+
+}
+
+.pro{
+background-color: whitesmoke;
+}
+
+.cont{
+    background-color: whitesmoke;
+}
+
+.icon1:hover{
+    color:white;
+}
+
+.container-fluid {
+    padding:0 8%;
+    padding-bottom: 0%;
+  background-color:rgb(26, 25, 25);
+}
+
+
+hr{
+    height: 1px; background-color:#F1B24A"
+}
+
+
+.nav-link {
+    color: green;
+}
+
+
+
+.navbar {
+    padding-bottom: 1rem;
+    background-color: rgb(26, 25, 25);
+}
+.navbar-brand {
+    font-family: 'PT Serif', serif;
+    font-size: 2.0rem;
+
+}
+
+
+#title {
+    background-color:whitesmoke;
+    color:black;
+    position: relative;
+    text-align: left;
+    position: relative;
+    top: 0
+}
+
+
+
+.pricing-column {
+    padding: 3% 2%;
+}
+
+
+
+
+
+@media (max-width:1028px) {
+    .title_image {
+        position: static;
+        transform: rotate(0deg);
+    }
+    #title {
+        text-align: center;
+    }
+}
+
+
+#cta {
+    background-color: #3346FF;
+    padding: 3% 15%;
+}
+#cta1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.7rem;
+    line-height: 1.5;
+    color: #fff;
+}
+button {
+    padding: 20px;
+}
+
+
+#footer {
+    padding: 2% 8%;
+    color: black;
+   font-family:'PT Serif', serif;
+    background-color: #3346FF;
+}
+#cta2 {
+    position: relative;
+
+}
+.counter {
+    font-size: 20px;
+    margin: 10px;
+    font-weight: 500
+}
+.earth {
+    position: absolute;
+    /*    padding-bottom: 50px;*/
+    bottom: 2%;
+    height: 150%;
+    width: 80%;
+    /*    top: 5%;*/
+}
+.corona {
+    padding-top: 30px;
+    padding-bottom: 0;
+    position: absolute;
+    position: absolute;
+    left: 30%;
+    width: 60%;
+    /*    transform: rotate(25deg);*/
+    top: 10px;
+}
+#Current {
+    padding-top: 5%;
+    padding-bottom: 5%
+}
+.footer-text {
+    color: black
+}
+a {
+    color: white;
+}
+a:hover {
+    color: yellow
+}
+#Covid {
+    padding: 4% 10%;
+    font-family:'PT Serif', serif;
+}
+#bg {
+    font-family: 'PT Serif', serif;
+    background-color: #3346FF;
+    padding: 2%;
+    color: #fff
+}
+.caption {
+
+    position: relative;
+    padding: 2% 10%;
+    text-align: center
+}
+.img1 {
+    border-radius: 25%;
+
+
+}
+.p1 {
+    color: black;
+    position: relative;
+    padding: 0 10%;
+    font-size: 1.3rem
+}
+.pur {
+    padding: 2% 7.5%;
+    font-family: 'PT Serif', serif;
+    background-color: #9370DB;
+}
+.i{
+    color: black
+}
+.col-lg-6{
+    text-align: center
+}
+
+
