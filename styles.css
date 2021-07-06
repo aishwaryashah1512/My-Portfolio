@@ -10,14 +10,6 @@ body {
     padding:0;
     height: 100%;
 }
-h1{
-    text-align: center;
-    font-weight: 800;
-}
-
-h5{
-    font-weight: 700;
-}
 
 p {
     font-family: 'PT Serif', serif;
@@ -43,7 +35,6 @@ a:hover{
 .nav-link:hover {
     color:#000;}
 
-}
 
 .navlist{
     padding-right: 2rem;
@@ -56,8 +47,8 @@ a:hover{
 .navbar {
     padding-bottom: 1rem;
     color: #fff;
-    background-color:rgb(59, 58, 58);
-    z-index:100;
+    background-color:rgb(10, 10, 10);
+    z-index:1200;
     position: fixed;
     top:0;
     width:100% 
@@ -74,26 +65,41 @@ a:hover{
     font-weight: 800;
 }
 
+
 .projects{
-    padding-top:40px ;
-    background-color:#ffb338;
-    height: 50%;
-    padding-bottom: 10px;
+    padding-top:50px ; 
+}
+
+.projects .container{
+    margin-left: 60px;
+    margin-right: 10px;
 }
 .proj{
     padding-top: 3%;
     padding-bottom: 5%;
 }
 
+.projects .row{
+    margin-bottom:80px;
+    margin-top: 60px;
+}
+
+.projects .col-md-6-sm-12{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.projname{
+   font-weight: 800;
+   font-size: 1.6rem;
+}
+
 .image img{
-    height: 270px;
-    width: 400px;
-    border-radius: 10px;
+    height: 400px;
+    width: 550px;
     box-shadow: 2px 2px 2px 5px rgb(226, 225, 225);
     transition: all 0.5s ease-in-out;
-    margin-left: 20px;
     margin-bottom: 10px;
-    margin-right: 10px;
 }
 
 .image img:hover{
@@ -103,31 +109,50 @@ a:hover{
 .main{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
     align-items: center;
 }
 
 .buttons{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
 }
 
 .buttons button{
- height: 50px;
- width: 170px;
+ height: 40px;
+ width: 150px;
  border: none;
  border-radius: 10px;
- font-size: 1.2rem;
+ font-size: 1rem;
  margin-right: 5px;
  margin-left: 5px;
 }
 
-.content{
-margin-left: 10px;
- margin-right:10px;
- font-size: 1.2rem;
- color: black;
+.bt1{
+    background-color:#ffb553 ;
+    color: black
+}
+
+.bt2{
+    color: #fff;
+    background-color: #6c757d;
+}
+.bt1:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.bt2:hover{
+    background-color: black;
+}
+
+.row {
+  justify-content: center;
+}
+.content p{
+    text-align: left;
+    margin-top: 20px;
 }
 
 .proitem{
@@ -138,7 +163,7 @@ margin-left: 10px;
     border-radius: 10px;
     align-items: center;
     height:500px;
-    box-shadow: 4px 3px 2px 3px rgb(240, 237, 237);
+    
 }
 
 .carousel-control-prev-icon{
@@ -153,15 +178,7 @@ margin-left: 10px;
   
 }
 
-.bt1{
- background-color: rgb(182, 180, 180);
-  color:rgb(250, 248, 248);
-}
 
-.bt1:hover{
-    background-color:#ffb553 ;
-    color: black
-}
 
 .icon2{
     color:rgb(78, 77, 77);
@@ -181,14 +198,6 @@ margin-left: 10px;
     color:black;
 }
 
-.bt2{
-    background-color: rgb(228, 226, 226) ;
-    color:rgb(78, 77, 77);
-}
-.bt2:hover{
-    background-color:#ffb553 ;
-    color:black
-}
 
 .experience {
  padding-top: 50px;
@@ -199,37 +208,73 @@ margin-left: 10px;
     font-size: 1.2rem;
 }
 
-.intro h1{
-    font-size: 3rem;
+.experience .buttons{
+    justify-content: center;
 }
-.intro{  
-    padding-top: 200px;
-    background-size: 100%;
-    background-color: #ffb338;
-    padding-bottom: 270px;
-    background-size: 100%;
+
+.intro{
+    position: relative;
+    width:100%;  
+    padding-top: 250px;
+    color:whitesmoke;
+    padding-bottom: 250px;
     text-align: center;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.intro::before {    
+      content: "";
+      background-image: url('https://blogs.biomedcentral.com/bmcblog/wp-content/uploads/sites/7/2020/05/work-731198_1920.jpg');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+ 
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+}
+
+.intro h1,h3,h6 {
+  position: relative;  
+}
+
+.intro h1{
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.intro h3{
+    font-size: 2rem;
+    font-weight: 650;
+}
+
+.intro h6{
+    font-size: 1.5rem;
+    font-weight: 550;
+}
+
+
 
 .aboutme{
     padding-top:40px ;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
     padding-bottom:10px;
 }
 
-h3{
-    color: black;
-    font-weight: 900;
-    font-size: 2.5rem;
-}
 
 .tech{
     padding-top: 50px;
     background-color: rgb(173, 171, 171);
     padding-bottom: 80px;
     color:black
+}
+
+.tech li{
+    color:rgb(58, 57, 57)
 }
 
 .contact{
@@ -239,11 +284,12 @@ h3{
 }
 
 .contact p{
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .container{
     text-align: center;
+    width: 100%;
 }
 
 .card{
@@ -253,21 +299,28 @@ h3{
     height: 100%;
     border-radius: 3%;
     transition:all 1s ease-in-out ;
-    
 }
 
+.tech .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*
 .card:hover{
     transform:scale(1.2);
     box-shadow:8px 7px 2px 6px rgb(240, 237, 237);
     z-index: 100;
 }
+*/
+
 
 .card li{
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .card-title{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 600;
     padding-bottom: 10px;
 }
@@ -284,43 +337,14 @@ h4{
 }
 
 
-/*
-@media screen and (max-width: 1140px) and (min-width: 601px){
-    .proitem{
-        width: 75%;
-    }   
-    .content{
-        font-size: 1.2rem;
-        margin-right: 15px;
-        margin-left: 10px;  
-        color:yellow     
+@media screen and (max-width:740px) {
+    .aboutme{
+        padding-left: 15px;
+        padding-right: 15px;
     }
-    .image img{
-        width:380px ;
+    .experience{
+        padding-left: 15px;
+        padding-right: 15px;   
     }
-    .intro{
-        padding-bottom: 250px;
-    }
-   }
-   
-   @media screen and (max-width: 600px){
-    .proitem{
-        width: 80%;
-    }   
-    .content{
-        font-size: 1.2rem;
-        margin-right: 15px;
-        margin-left: 10px;
-        color:green
-    }
-    .image img{
-        width:360px ;
-    }
-    h3{
-        font-size: 3rem;
-    }
-    h4{
-        font-size: 2rem;
-    }
-   }
-  
+}
+
