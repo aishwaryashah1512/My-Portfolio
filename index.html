@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" charset="utf-8">
     <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap" rel="stylesheet">
@@ -10,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">  
@@ -18,54 +19,53 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js'></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-    <script src="index.js"></script>
+    
 </head>
 <body>
-
-
-
-    <section id="title">        
-            <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top ">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto navlist" >
-                        <li class="nav-item ">
-                            <a class="nav-link"  style="color: #fff;"href="#aboutme">About Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" style="color:#fff"href="#tech">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" style="color:#fff"href="#projects">Projects</a>
-                         </li>
-                         <li class="nav-item">
-                          <a class="nav-link" style="color:#fff"href="#experience">Experience</a>
-                         </li>
-                         <li class="nav-item">
-                          <a class="nav-link" style="color:#fff"href="#contact">Contact</a>
-                         </li>
-                    </ul>
-              </div>
-            </nav>
-     <div class='intro' id='introduction'>
-       <div class='intro1'>
-           <h1>Hi there!!!</h1>
-           <br>
-           <br>
-           <h3>I'm Aishwarya-Shah</h3>
-           <h6>Web Developer | Competetive Programmer </h6>
-      </div>
-     
-      </div>
+    <nav>    
+        <ul class="show">
+          <li class="nav-item ">
+            <a class="nav-link"  href="#aboutme">About Me</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#tech">Skills</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+         </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#experience">Experience</a>
+         </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+         </li>
+        </ul>
+        <label id="icon">
+          <i class="fas fa-bars " id="icon"></i>
+        </label>
+      </nav>
       
+      
+    <div class='intro' id='introduction'>
+       <div class='intro1'>
+           <p class="p1">Hello,</p>
+           <p class="p2">I'm Aishwarya-Shah</p>
+           <p class="p3">Web Developer & Competetive Programmer </p>
+           <br>
+           <a href="#aboutme"><i class="fas fa fa-chevron-down fa-3x bounce" ></i></a>
+       </div>
+    </div>
+
+
 <div class="aboutme" id='aboutme'>
-  <h1>About Me</h1>
-  <br>
-  <p>
-    I am a Full-Stack web developer.
+  <p class="p2 p4">About Me</p>
+    <div class="typewriter"><span class='p6'>I'm a</span> <span class="p2 p6 typing">Full-Stack web developer
+     </span>
+    </div>
+     <div class="div1">
+      <p class="p5">
     I have built several projects based on MERN stack.<br>
     I am a third year engineering student,
     <br> pursuing engineering in Information technology 
@@ -77,24 +77,25 @@
     <br>I am a intuitive programmer skilled in Python and C++
     <br>
     I love making Sketches and Paintings during my leisure time<br>
-    This is my resume  <a href="Aishwarya's Resume.pdf" style="color:black;">
-        <i class="fas fa-file fa-1x icon1" style="color:black;"></i></a>
+     <a href="Aishwarya's Resume.pdf" style="color:black;">
+       <button class="resume">Resume</button></a>
     </b>
 <br>
 <br>
 
   </p>
 </div>
+</div>
      </div>
      </div>
 
 <div class='tech' id='tech'>
-  <h1>My Tech Stack</h1>
+  <p class="p2 p7">My Tech Stack</p>
   <br>
   <div class="container">
     <div class="row">
       <div class="techcol col-lg-4 col-sm-12">
-    <div class="card" style="width: 18rem;">     
+    <div class="card c1" style="width: 18rem;">     
       <div class="card-body">
         <h5 class="card-title">Languages and Tools</h5>
         <p class="card-text"><li>C++</li>
@@ -106,7 +107,7 @@
     </div>
     </div>
 <div class="techcol col-lg-4 col-sm-12">
-  <div class="card" style="width: 18rem;">     
+  <div class="card c2" style="width: 18rem;">     
     <div class="card-body">
       <h5 class="card-title">Frameworks and Libraries</h5>
      
@@ -121,7 +122,7 @@
 </div>
 </div>
 <div class="techcol col-lg-4 col-sm-12">
-  <div class="card" style="width: 18rem;">     
+  <div class="card c1" style="width: 18rem;">     
     <div class="card-body">
       <h5 class="card-title">Databases</h5>
       <p class="card-text">
@@ -136,16 +137,15 @@
 </div>
 </div>
 <div class="projects" id='projects'>
-  <h1>Projects</h1>
+  <p class="p2 p4">Projects</p>
     <div class="container">
       <div class="row">
-        <div class="col-md-6-sm-12">
-  
+        <div class="col-md-6-sm-12 column1">
           <div class="image">            
             <img src="image/Screenshot (5).png " ">      
         </div>
       </div>
-      <div class="col-md-6-sm-12">
+      <div class="col-md-6-sm-12 column2">
         <div class='content'>
           <p class="projname">My Burger App</p>
              <p class="text-secondary">A online Burger ordering App built using 
@@ -166,7 +166,7 @@
     </div>
 
     <div class="row">
-      <div class="col-md-6-sm-12">
+      <div class="col-md-6-sm-12 column1">
         <div class='content'>
           <p class="projname">My Burger App</p>
              <p class="text-secondary">A online Burger ordering App built using 
@@ -183,7 +183,7 @@
               </div>            
         </div>
     </div>
-    <div class="col-md-6-sm-12">
+    <div class="col-md-6-sm-12 column2">
       <div class="image">            
         <img  src="image/Screenshot (6).png">
     </div>
@@ -192,15 +192,13 @@
   </div>
 
   <div class="row">
-    <div class="col-md-6-sm-12">
+    <div class="col-md-6-sm-12 column1">
       <div class="image">        
-
-        <img  src="image/Screenshot (7).png">
-      
-    </div>
+        <img  src="image/Screenshot (7).png">  
+    </div> 
     </div>
 
-  <div class="col-md-6-sm-12">
+  <div class="col-md-6-sm-12 column2">
     <div class='content'>
       <p class="projname">My Burger App</p>
          <p class="text-secondary">A online Burger ordering App built using 
@@ -218,17 +216,11 @@
     </div>
  
 </div>
-</div>
-
-    
-      
-         
-     
+</div>    
 </div>
 <div class='container-fluid experience' id='experience'>
-  <h1>Experience</h1>
-  <br>
-  <p>I have worked as a web development Intern at Dinify (formerly Contactless.Dining.Inc)
+  <p class="p2 p7">Experience</p>
+  <p class="p9">I have worked as a web development Intern at Dinify (formerly Contactless.Dining.Inc)
     <br>
     Duration:2 Months(April 2021 - May 2021)
     <br>
@@ -249,28 +241,41 @@
 </div>
 
 <div class="contact" id='contact'>
-  <h1>Contact Me</h1>
-  <br>
-<div>   
-
-    <p>Contact No:8966036394</p>
+  <p class="p2 p7">Contact Me</p>
+  <div>   
+    <p class="p8">Contact No:8966036394</p>
   <a href="mailto:aishwaryashah1235@gmail.com" >
       <i class="fas fa-envelope-square fa-3x icon1"></i></a>
   
   <a href="https://www.linkedin.com/in/aishwarya-shah-4433b8170/"  >
-  <i class="fab fa-linkedin fa-3x icon2" >
+  <i class="fab fa-linkedin fa-3x icon1" >
   </i></a>
 </p>
-
 </div>
 </div>
 
-
-
+<script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
+<script  src='jquery.smoove.js'></script>
+<script>
+  $('.aboutme').smoove({offset:'20%'})
+  $('.tech').smoove({offset:'50%'})
+  $('.experience').smoove({offset:'20%'})
+  $('#contact').smoove({offset:'50%'})
+</script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous"></script>
-   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script>
+    $(document).ready(function(){
+      $("#icon").click(function(){
+        $('ul').toggleClass('show');
+      })
+      $('.nav-item').click(function(){
+        $('ul').toggleClass('show')
+      })
+    });
+    </script>
+    
 </body>
-
 </html>
