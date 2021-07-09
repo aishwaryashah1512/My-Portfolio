@@ -92,30 +92,28 @@ nav #icon{
 
 .projects{
     padding-top:50px ; 
+    width: 100%;
+  
 }
 
-.projects .container{
-    margin-left: 60px;
-    margin-right: 10px;
+.projects  .container{
+    margin-top:50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+
 .proj{
     padding-top: 3%;
     padding-bottom: 5%;
 }
 
 .projects .row{
-    margin-bottom:80px;
-    margin-top: 60px;
-   
+    margin-top:50px;
+    margin-bottom: 50px;
 }
 
-.projects .column1{
-    animation: slideIncol1  0.7s ease-in-out ;
-}
-
-.projects .column2{
-    animation: slideIncol2 0.7s ease-in-out;
-}
 
 .projects .col-md-6-sm-12{
     margin-left: 25px;
@@ -133,24 +131,6 @@ nav #icon{
     box-shadow: 2px 2px 2px 5px rgb(226, 225, 225);
     transition: all 0.5s ease-in-out;
     margin-bottom: 10px;
-}
-
-@keyframes slideIncol1 {
-    0%{
-        transform: translateX(-500px);
-    }
-    100%{
-        transform: translateX(0px);
-    }  
-}
-
-@keyframes slideIncol2 {
-    0%{
-        transform: translateX(500px);
-    }
-    100%{
-        transform: translateX(0px);
-    }
 }
 
 .image img:hover{
@@ -187,6 +167,12 @@ nav #icon{
 .bt2{
     color: #fff;
     background-color: #3f3f3f
+}
+.bt1:hover{
+    color:black;
+}
+.bt2:hover{
+    color:black;
 }
 
 .row {
@@ -231,11 +217,13 @@ nav #icon{
 }
 
 .experience {
- width: 100vw;
+ width: 100%;
  padding-top: 50px;
  padding-bottom: 60px;
  background-color: #242222;
  color: whitesmoke;
+ margin-left: auto;
+ margin-right: auto;
 }
 
 .experience p9{
@@ -249,7 +237,6 @@ nav #icon{
 .intro{ 
     width:100vw;  
     padding-top: 250px;
-    color:whitesmoke;
     padding-bottom: 250px;
     text-align: center;
     height: 100vh;
@@ -336,20 +323,20 @@ nav #icon{
 
 .aboutme{
     background-color: white;
-    width: 100vw;
+    width: 100%;
     padding-top:40px ;
     font-size: 1rem;
     text-align: center;
     padding-bottom:10px;
 }
-
+/*
 .typewriter {
     overflow: hidden; 
     border-right: .15em solid transparent; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .10em; /* Adjust as needed */
-    animation: 
+    /*white-space: nowrap; /* Keeps the content on a single line */
+   /* margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    /*letter-spacing: .10em; /* Adjust as needed */
+    /*animation: 
       typing 3.5s steps(40,end),
       blink-caret .75s step-end ;
   }
@@ -363,7 +350,7 @@ nav #icon{
   @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: crimson; }
-  }
+  }*/
   
 
 .p4{
@@ -404,7 +391,7 @@ nav #icon{
 }
 
 .contact{
-    width: 100vw;
+    width: 100%;
     padding-top: 30px;
     background-color: #2e2b2b;
     padding-bottom: 20px;
@@ -482,15 +469,16 @@ h4{
 }
 
 
+
 @media (max-width:909px) {
    nav #icon{
-        color:white;
-    font-size: 2.6rem;
-    padding-top: 7px;
-    padding-left: 12px;
-    float: left;
-    cursor: pointer;
-        display: block;
+      color:white;
+      font-size: 2.6rem;
+      padding-top: 7px;
+      padding-left: 12px;
+      float: left;
+      cursor: pointer;
+      display: block;
     }
     nav{
         height: 70px;
@@ -501,20 +489,18 @@ h4{
         background-color: black;
         width: 100%;
         position: fixed;
-        top: 60px;
-        left: 0;
-        right:100%;
+        top: 0px;
         text-align: center;
         z-index: 1200;
-        transition:0.5 0.3s ease-in-out
     }
     nav li{
         display: block;
+        text-align: center;
     }
     nav a{
         font-size: 1.3rem;
     }
-    nav a:active{
+    nav a:hover{
         border: none;
         color:crimson;
         font-weight: 700;
@@ -529,7 +515,7 @@ h4{
     .p5{
         padding-left: 10px;
         padding-right: 10px;
-        font-size:1.4rem ;
+        font-size:1.3rem ;
     }
     .p6{
         font-size: 1.7rem;
@@ -544,6 +530,35 @@ h4{
         display: flex;
         justify-content: center;
         align-items: center;
+      } 
+      .projects{
+          margin: auto;
+      }
+      .image img{
+          width: 450px;
+          height: 350px;
+      }
+}
+@media  (max-width:652px) {
+    .image img{
+        width:300px;
+        height: 200px;
     }
-        
+    .intro .p1{
+        color: whitesmoke;
+        font-size: 2rem;
+        font-weight: 600;
+       }
+       
+    .intro .p2{
+           color: crimson;
+           font-size: 3.25rem;
+           font-weight: 650;
+       }
+       
+    .intro .p3{
+           color: whitesmoke;
+           font-size: 1.95rem;
+           font-weight: 600;
+       }
 }
