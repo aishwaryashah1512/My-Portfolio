@@ -1,4 +1,4 @@
-/*********************************************TAGS******************************************************************8*/
+
 html{
     margin:0;
     padding:0
@@ -19,37 +19,6 @@ li{
 a:hover{
     text-decoration: none;
 }
-/*
-.nav-item a:active{
-    color:#ffdf6c
-}
-
-.nav-link:hover {
-    color:#000;}
-
-
-.navlist{
-    padding-right: 2rem;
-}
-
-.navlist li{
-    padding-left: 1rem;
-}
-
-.navbar {
-    padding-bottom: 1rem;
-    background-color: #202020;
-    z-index:1200;
-    position: fixed;
-    top:0;
-    width:100% 
-}
-
-.navbar-toggler{
-    font-size: 2rem;
-    border: white;
-    font-weight: 800;
-}*/
 
 nav{
     height: 60px;
@@ -329,29 +298,6 @@ nav #icon{
     text-align: center;
     padding-bottom:10px;
 }
-/*
-.typewriter {
-    overflow: hidden; 
-    border-right: .15em solid transparent; /* The typwriter cursor */
-    /*white-space: nowrap; /* Keeps the content on a single line */
-   /* margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    /*letter-spacing: .10em; /* Adjust as needed */
-    /*animation: 
-      typing 3.5s steps(40,end),
-      blink-caret .75s step-end ;
-  }
-
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: crimson; }
-  }*/
-  
 
 .p4{
     font-size: 2rem;
